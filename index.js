@@ -14,7 +14,7 @@ let etatJeu = "menu";
 
 const largeurRaquette = 30;
 const hauteurRaquette = 160;
-const diametreBalle = 60;
+const diametreBalle = 80;
 
 
 // Fonction de configuration du jeu
@@ -28,7 +28,7 @@ function setup() {
 // Fonction de dessin du jeu
 // Fonction de dessin du jeu
 function draw() {
-    background(0);
+    background(0,0,255);
 
     stroke(255)
     strokeWeight(4)
@@ -75,15 +75,15 @@ function keyPressed() {
 
 // Fonction de dessin du menu
 function afficherMenu() {
-    fill(0)
-    stroke(255)
+    fill(255)
+    stroke(0)
     strokeWeight(2)
     rect(width/2-300, height/2-100, 600, 200)
    
     noStroke()
  
  
-    fill(255);
+    fill(0);
   textAlign(CENTER);
   textSize(32);
   text("Appuyez sur ENTRÉE pour commencer", width / 2, height / 2);
@@ -95,14 +95,14 @@ function afficherMenu() {
 // Fonction de dessin de l'écran de fin
 function afficherFin() {
 
-    fill(0)
-    stroke(255)
+    fill(255)
+    stroke(0)
     strokeWeight(2)
     rect(width/2-300, height/2-100, 600, 200)
    
     noStroke()
 
-  fill(255);
+  fill(0);
   textAlign(CENTER);
   textSize(32);
   text("Jeu terminé", width / 2, height / 2 - 20);
@@ -115,9 +115,9 @@ function afficherFin() {
 function afficherScores() {
   fill(255);
   textAlign(CENTER);
-  textSize(24);
-  text(scoreJoueur1, width / 4, 30);
-  text(scoreJoueur2, 3 * width / 4, 30);
+  textSize(50);
+  text(scoreJoueur1, width / 4, 60);
+  text(scoreJoueur2, 3 * width / 4, 60);
 }
 
 // Classe du joueur
