@@ -1,4 +1,3 @@
-
 // Définition des variables du jeu
 let joueur1, joueur2, balle;
 let vitesseJoueur = 12;
